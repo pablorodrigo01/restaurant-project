@@ -7,7 +7,7 @@
             <label for="name" class="block font-medium text-sm text-gray-700 dark:text-gray-300">Nome</label>
             <input id="name"
                 class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm block mt-1 w-full"
-                type="text" name="name" autocomplete="name" autofocus required :value="old('name')">
+                type="text" name="name" autocomplete="name" autofocus required value="{{ old('name') }}">
             <x-input-error :messages="$errors->get('name')" class="mt-2" />
         </div>
 
@@ -16,7 +16,7 @@
             <label for="email" class="block font-medium text-sm text-gray-700 dark:text-gray-300">Email</label>
             <input id="email"
                 class="border-gray-300 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-300 focus:border-indigo-500 dark:focus:border-indigo-600 focus:ring-indigo-500 dark:focus:ring-indigo-600 rounded-md shadow-sm block mt-1 w-full"
-                type="email" name="email" autocomplete="username" autofocus required :value="old('email')">
+                type="email" name="email" autocomplete="username" autofocus required value="{{ old('email') }}">
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
 
